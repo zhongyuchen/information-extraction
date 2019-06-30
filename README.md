@@ -11,6 +11,8 @@ pip install -r requirements.txt
 
 ## Data
 
+Data is available [here](https://github.com/czhongyu/information-extraction/releases/download/v1.0/data.zip).
+
 ## Idea
 
 * Train multi-label classification model: predict predicate.
