@@ -11,7 +11,17 @@ pip install -r requirements.txt
 
 ## Data
 
-Data is available [here](https://github.com/czhongyu/information-extraction/releases/download/v1.0/data.zip).
+* sample schema:
+
+```
+{"object_type": "地点", "predicate": "祖籍", "subject_type": "人物"}
+```
+
+* sample data, with `postag` and `text` as input and `spo_list` as output:
+
+```
+{"postag": [{"word": "《", "pos": "w"}, {"word": "星空黑夜传奇", "pos": "nw"}, {"word": "》", "pos": "w"}, {"word": "是", "pos": "v"}, {"word": "连载", "pos": "v"}, {"word": "于", "pos": "p"}, {"word": "起点中文网", "pos": "nz"}, {"word": "的", "pos": "u"}, {"word": "网络", "pos": "n"}, {"word": "小说", "pos": "n"}, {"word": "，", "pos": "w"}, {"word": "作者", "pos": "n"}, {"word": "是", "pos": "v"}, {"word": "啤酒", "pos": "n"}, {"word": "的", "pos": "u"}, {"word": "罪孽", "pos": "n"}], "text": "《星空黑夜传奇》是连载于起点中文网的网络小说，作者是啤酒的罪孽", "spo_list": [{"predicate": "连载网站", "object_type": "网站", "subject_type": "网络小说", "object": "起点中文网", "subject": "星空黑夜传奇"}, {"predicate": "作者", "object_type": "人物", "subject_type": "图书作品", "object": "啤酒的罪孽", "subject": "星空黑夜传奇"}]}
+```
 
 ## Idea
 
