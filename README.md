@@ -41,6 +41,10 @@ pip install -r requirements.txt
 }
 ```
 
+## Baseline
+
+* [baidu/information-extraction](https://github.com/baidu/information-extraction)
+
 ## Idea
 
 * Train multi-label classification model: predict predicate.
