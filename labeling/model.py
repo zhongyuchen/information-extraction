@@ -35,9 +35,9 @@ class AdvSeqLabel(nn.Module):
         
         # self.Embedding = nn.Embedding(init_embed)
         #print(char_init_embed)
-        self.char_embed = encoder.embedding.Embedding(char_init_embed)
-        self.word_embed = encoder.embedding.Embedding(word_init_embed)
-        self.pos_embed = encoder.embedding.Embedding(pos_init_embed)
+        self.char_embed = nn.Embedding(char_init_embed[0], char_init_embed[1])
+        self.word_embed = nn.Embedding(word_init_embed[0], word_init_embed[1])
+        self.pos_embed = nn.Embedding(pos_init_embed[0], pos_init_embed[1])
         # spo embed size: 50
         self.embed_dim = self.char_embed.embedding_dim + self.word_embed.embedding_dim + self.pos_embed.embedding_dim + spo_embed_dim
         # sentence length
@@ -170,9 +170,9 @@ class TransformerSeqLabel(nn.Module):
         
         # self.Embedding = nn.Embedding(init_embed)
         #print(char_init_embed)
-        self.char_embed = encoder.embedding.Embedding(char_init_embed)
-        self.word_embed = encoder.embedding.Embedding(word_init_embed)
-        self.pos_embed = encoder.embedding.Embedding(pos_init_embed)
+        self.char_embed = nn.Embedding(char_init_embed[0], char_init_embed[1])
+        self.word_embed = nn.Embedding(word_init_embed[0], word_init_embed[1])
+        self.pos_embed = nn.Embedding(pos_init_embed[0], pos_init_embed[1])
         # spo embed size: 50
         self.embed_dim = self.char_embed.embedding_dim + self.word_embed.embedding_dim + self.pos_embed.embedding_dim + spo_embed_dim
 
