@@ -3,4 +3,4 @@ fitlog==0.1.2
 numpy==1.14.0
 fastNLP==0.4.1
 pytorch_pretrained_bert==0.6.2
-tensorflow==1.14.0
+tensorflow==1.15.2
