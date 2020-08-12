@@ -1,4 +1,4 @@
-# Information Extraction 
+# information-extraction
 
 [2019 Language and Intelligence Challenge](http://lic2019.ccf.org.cn/): Information Extraction 
 
