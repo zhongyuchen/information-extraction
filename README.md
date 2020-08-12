@@ -2,6 +2,11 @@
 
 [2019 Language and Intelligence Challenge](http://lic2019.ccf.org.cn/): Information Extraction 
 
+## branches
+
+* `master` branch: based on `fastNLP` and `fitlog`
+* `pytorch` branch: based on `PyTorch` and `tensorboardX`
+
 ## Prerequisites
 
 * Install required packages by:
