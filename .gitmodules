@@ -1,0 +1,3 @@
+[submodule "information-extraction-data"]
+	path = information-extraction-data
+	url = git@github.com:zhongyuchen/information-extraction-data.git
